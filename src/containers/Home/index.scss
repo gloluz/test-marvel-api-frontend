@@ -1,0 +1,20 @@
+.home-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .welcome-title {
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .picture-home {
+    margin-top: 40px;
+    width: 1000px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+}

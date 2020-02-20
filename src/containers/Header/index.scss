@@ -1,0 +1,43 @@
+header {
+  background-color: #000;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .link {
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+    }
+    .logo {
+      cursor: pointer;
+      width: 200px;
+      height: 80px;
+      object-fit: cover;
+    }
+
+    .list-content {
+      flex: 1;
+
+      .list {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: bold;
+
+        .link {
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: #ec1a25;
+          }
+        }
+      }
+    }
+  }
+}
