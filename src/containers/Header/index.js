@@ -21,7 +21,10 @@ const Header = () => {
             <Link to="/comics" className="link">
               <li className="link">Comics</li>
             </Link>
-            <li className="link">Favorites</li>
+
+            <Link to="/favorites" className="link">
+              <li className="link">Favorites</li>
+            </Link>
           </ul>
         </div>
       </Container>
