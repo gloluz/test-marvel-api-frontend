@@ -4,6 +4,7 @@ import "./index.scss";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Container from "../Container";
+import Loader from "../../loader.svg";
 
 const Character = () => {
   const [data, setData] = useState({});
@@ -26,7 +27,9 @@ const Character = () => {
   return (
     <Container>
       {isLoading ? (
-        <p>En cours de chargement ...</p>
+        <div className="loader">
+          <img src={Loader} alt="loader" />
+        </div>
       ) : (
         <div>
           {data.map((character, index) => {

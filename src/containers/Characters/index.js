@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Cookies from "js-cookie";
 
 import "./index.scss";
 import Container from "../Container";
 import SearchBar from "../../composants/SearchBar";
+import Loader from "../../loader.svg";
 
 const NUMBER_RESULT_PER_PAGE = 100;
 
@@ -85,7 +85,9 @@ const Characters = () => {
   return (
     <Container className="main-container">
       {isLoading ? (
-        <p>En cours de chargement ...</p>
+        <div className="loader">
+          <img src={Loader} alt="loader" />
+        </div>
       ) : (
         <>
           <SearchBar

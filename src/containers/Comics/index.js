@@ -5,6 +5,7 @@ import "./index.scss";
 import Container from "../Container";
 import { useParams, Link } from "react-router-dom";
 import SearchBar from "../../composants/SearchBar";
+import Loader from "../../loader.svg";
 
 const NUMBER_RESULT_PER_PAGE = 100;
 
@@ -67,7 +68,9 @@ const Comics = () => {
   return (
     <Container className="main-container">
       {isLoading ? (
-        <p>En cours de chargement ...</p>
+        <div className="loader">
+          <img src={Loader} alt="loader" />
+        </div>
       ) : (
         <>
           <SearchBar
