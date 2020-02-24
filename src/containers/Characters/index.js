@@ -34,6 +34,8 @@ const Characters = () => {
   const fetchDataWithNameQuery = async () => {
     const offset = (page - 1) * NUMBER_RESULT_PER_PAGE;
 
+    setIsLoading(true);
+
     const response = await axios.get(
       `${process.env.REACT_APP_BASE_URL}/characters?nameStartsWith=${search}&limit=${NUMBER_RESULT_PER_PAGE}&offset=${offset}`
     );

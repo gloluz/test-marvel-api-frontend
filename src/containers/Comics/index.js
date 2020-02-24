@@ -31,6 +31,7 @@ const Comics = () => {
 
   const fetchDataWithTitleQuery = async () => {
     const offset = (page - 1) * NUMBER_RESULT_PER_PAGE;
+    setIsLoading(true);
 
     const response = await axios.get(
       `${process.env.REACT_APP_BASE_URL}/comics?limit=${NUMBER_RESULT_PER_PAGE}&offset=${offset}&titleStartsWith=${search}`
