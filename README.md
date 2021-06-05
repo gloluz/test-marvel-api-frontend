@@ -12,7 +12,7 @@ In the project directory, you can run:
 
 `yarn start`
 
-Or with this link: [https://sad-pare-6b708d.netlify.com/]
+Or with this link: [https://replique-marvel.netlify.app]
 
 ## Contributing
 
